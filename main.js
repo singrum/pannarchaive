@@ -31,6 +31,8 @@ function main(){
         }
         img_space.innerHTML = html
     }
+
+    
 }
 
 window.onload = main
