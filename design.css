@@ -1,0 +1,49 @@
+.site-header{
+    display : flex;
+    justify-content: space-between;
+}
+.logo-set{
+    display : flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+}
+.logo{
+    font-size: 20px;
+}
+.control-set{
+    display : flex;
+    justify-content: center;
+}
+
+.control-set{
+    margin-top : 20px;
+    margin-bottom : 20px;
+}
+
+.index-box{
+    border : solid #6c757d 1px;
+    height : 40px;
+    width : 100px;
+}
+
+#arrow-back{
+    height : 40px;
+    width : 40px;
+    border : solid #6c757d 1px;
+    border-radius: 5px 0px 0px 5px;
+    border-right : 0px;
+    display : flex;
+    justify-content: start;
+    align-items: center;
+}
+#arrow-forward{
+    height : 40px;
+    width : 40px;
+    border : solid #6c757d 1px;
+    border-radius: 0px 5px 5px 0px;
+    border-left : 0px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
