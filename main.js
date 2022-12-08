@@ -33,16 +33,16 @@ function main(){
         index = index_box.value;
         for(let i = 0; i < img_per_page; i++){
             html += `<img class="image" src="https://thumb.pann.com/tc_100x70/http://fimg5.pann.com/new/download.jsp?FileID=${index - i}">`
-            console.log(html);
+            console.log(html)
         }
         img_space.innerHTML = html;
 
         document.querySelectorAll(".image").forEach(
             a=>a.addEventListener("click", ()=>{
                 let curr_index = new URL(a.getAttribute("src")).searchParams.get("FileID")
-                console.log(curr_index)
+                
                 modal_element.querySelector(".modal-title").innerHTML = curr_index;
-                console.log(a)
+                
                 modal_element.querySelector(".modal-body").innerHTML = `<img class="full-image" src="https://fimg5.pann.com/new/download.jsp?FileID=${curr_index}"></img>`
                 modal.show()}
                 
