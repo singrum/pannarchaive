@@ -32,7 +32,7 @@ function main(){
         let html = "";
         index = index_box.value;
         for(let i = 0; i < img_per_page; i++){
-            html += `<img class="image" src="https://fimg5.pann.com/new/download.jsp?FileID=${index - i}">`
+            html += `<img class="image" src="https://m.pann.nate.com/common/imageView?area=pann&source_url=https%3A%2F%2Ffimg5.pann.com%2Fnew%2Fdownload.jsp%3FFileID%3D${index-i}">`
         }
         img_space.innerHTML = html
 
