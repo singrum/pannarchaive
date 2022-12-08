@@ -3,6 +3,9 @@ function main(){
     const arrow_forward = document.querySelector("#arrow-forward");
     const index_box = document.querySelector("#index-box");
     const img_space = document.querySelector("#img-space");
+    const modal_element = document.querySelector("#zoom-modal");
+    const modal = new bootstrap.Modal(modal_element, {});
+    
 
     let index = 65230050;
     let img_per_page = 30;
@@ -32,6 +35,14 @@ function main(){
             html += `<img class="image" src="http://fimg5.pann.com/new/download.jsp?FileID=${index - i}">`
         }
         img_space.innerHTML = html
+
+        document.querySelectorAll(".image").forEach(
+            a=>a.addEventListener("click", ()=>{
+                modal_element.querySelector(".modal-title").innerHTML = a.getAttribute("src");
+                modal.show()}
+            )
+        )
+        
     }
 
     
