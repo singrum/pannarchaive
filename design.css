@@ -67,3 +67,7 @@ body{
     height: 100px;
     margin : 5px;
 }
+
+.full-image{
+    width : 100%;
+}
