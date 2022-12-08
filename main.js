@@ -33,6 +33,7 @@ function main(){
         index = index_box.value;
         for(let i = 0; i < img_per_page; i++){
             html += `<img class="image" src="https://thumb.pann.com/tc_100x70/http://fimg5.pann.com/new/download.jsp?FileID=${index - i}">`;
+
         }
         img_space.innerHTML = html;
 
