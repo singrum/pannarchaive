@@ -12,7 +12,7 @@
     <script type="text/javascript" src="main.js"></script>
     <title>판카이브</title>
 </head>
-<body>
+<body style="background-color: #212529;">
     <header class="site-header">
         <span class = "logo-set">
             <a class = "logo" href = "https://singrum.github.io/pannarchaive">판카이브</a>
@@ -21,7 +21,7 @@
     <div class="controller">
         <div class="control-set">
 
-            <span class="btn btn-light arrow-back" id="arrow-back" type="button">
+            <span class="btn btn-dark arrow-back" id="arrow-back" type="button">
                 <span class="material-symbols-outlined">
                     arrow_back_ios
                 </span>
@@ -29,7 +29,7 @@
 
             <input type="text" class="index-box center" id="index-box" value="65222231">
 
-            <span class="btn btn-light arrow-forward" id="arrow-forward" type="button">
+            <span class="btn btn-dark arrow-forward" id="arrow-forward" type="button">
                 <span class="material-symbols-outlined">
                     arrow_forward_ios
                 </span>
@@ -43,17 +43,13 @@
     </div>
 
     <div class="modal fade" id="zoom-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-          <div class="modal-header">
+          <div class="modal-header" style="background-color: #121212; color : #ffffff; border : 0px;">
             <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="btn-close  btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body"></div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary save-btn">Save</button>
-          </div>
+          <div class="modal-body" style="padding : 0px;"></div>
         </div>
       </div>
     </div>
