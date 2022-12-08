@@ -15,8 +15,9 @@ body{
 
 }
 .logo{
+    font-family: 'Gugi', cursive;
     color : #ffffff;
-    font-size: 26px;
+    font-size: 35px;
 }
 .control-set{
     display : flex;
